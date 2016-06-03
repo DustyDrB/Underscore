@@ -5,8 +5,12 @@ class Underscore(object):
         # your code here
     def find(self):
         # your code here
-    def filter(self):
-        # your code 
+    def filter(self, a_list, filter_lambda):
+        new_list = []
+        filter_lambda = lambda x: x % 2 == 0
+        for item in a_list:
+            new_list.append(filter_lambda(item))
+        return new_list
     def reject(self):
         # your code
 # you just created a library with 5 methods!
